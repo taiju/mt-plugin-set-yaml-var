@@ -1,0 +1,54 @@
+=pod
+
+=head1 NAME
+
+SetYAMLVar - A Movable Type plugin that provide a block tag. It is used creating any template variables with YAML format.
+
+=head1 SYNOPSIS
+
+  <mt:SetYAMLVar>
+  foo: foo_foo
+  bar:
+    - bar_foo
+    - bar_bar
+    - bar_baz
+  baz:
+    baz_foo:
+      baz_foo_bar: baz_foo_bar_baz
+  </mt:SetYAMLVar>
+
+  It a equivalent below.
+
+  <$mt:Var name="foo" value="foo_foo"$>
+  <$mt:Var name="bar[0]" value="bar_foo"$>
+  <$mt:Var name="bar[1]" value="bar_bar"$>
+  <$mt:Var name="bar[2]" value="bar_baz"$>
+  <mt:SetHashVar name="baz">
+    <mt:SetHashVar name="baz_foo">
+      <$mt:Var name="baz_foo_bar" value="baz_foo_bar_baz"$>
+    </mt:SetHashVar>
+  </mt:SetHashVar>
+
+=head1 DESCRIPTION
+
+SetYAMLVar is a block tag that is used creating any template variables with YAML format.
+
+It is useful for creating a complex template variables, for example when creating a nested hash variables.
+
+Not support Dynamic publising.
+
+=head1 SEE ALSO
+
+perldoc SetYAMLVar::Tags
+
+=head1 AUTHOR
+
+taiju <higashi@taiju.info>
+
+=head1 LICENSE
+
+Copyright (C) taiju
+
+This library is free software; you can redistribute it and/or modify it under the same terms as Perl itself.
+
+=cut

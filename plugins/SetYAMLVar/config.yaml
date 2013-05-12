@@ -1,0 +1,10 @@
+id: setyamlvar
+name: SetYAMLVar
+version: 1.0
+author_name: taju
+author_link: http://twitter.com/taiju
+description: A block tag that set the value of template variables with YAML format.
+
+tags:
+  block:
+    SetYAMLVar: $setyamlvar::SetYAMLVar::Tags::_hdlr_set_yaml_var
