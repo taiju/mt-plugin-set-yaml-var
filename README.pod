@@ -2,7 +2,7 @@
 
 =head1 NAME
 
-SetYAMLVar - A Movable Type plugin that provide a block tag. It is used creating any template variables with YAML format.
+SetYAMLVar - SetYAMLVar is a block tag that is used creating any template variables with YAML format.
 
 =head1 SYNOPSIS
 
